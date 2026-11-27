@@ -14,7 +14,7 @@ I have also recorded a video explaining the project, its functionalities, implem
 
 Watch the Project Explanation Video:
 
-▶️ Click here to watch the project demonstration
+▶️ [Click here to watch the project demonstration](https://drive.google.com/file/d/1Ees-0rm26SQKZvldJl6MZu4zatXPH8bi/view?usp=sharing)
 
 ## 🎯 Objectives
 
