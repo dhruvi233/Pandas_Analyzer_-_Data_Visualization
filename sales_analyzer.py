@@ -8,16 +8,15 @@ import os
 
 class SalesDataAnalyzer:
 
-    # 1. Constructor
     def __init__(self):
         self.data = pd.DataFrame()
         print("Sales Data Analyzer Initialized!")
 
-    # 2. Destructor
+   
     def __del__(self):
         print("Sales Data Analyzer Closed!")
 
-    # 3. Load CSV Data
+   
     def load_data(self, file_path):
         try:
             self.data = pd.read_csv(file_path)
@@ -30,14 +29,14 @@ class SalesDataAnalyzer:
         except Exception as e:
             print("Error:", e)
 
-    # Check whether data is loaded
+
     def check_data(self):
         if self.data.empty:
             print("Please load the dataset first!")
             return False
         return True
 
-    # 4. Explore Data
+   
     def explore_data(self):
         if not self.check_data():
             return
@@ -68,7 +67,7 @@ class SalesDataAnalyzer:
         else:
             print("Invalid choice!")
 
-    # 5. Clean Data
+   
     def clean_data(self):
         if not self.check_data():
             return
@@ -102,7 +101,7 @@ class SalesDataAnalyzer:
         else:
             print("Invalid choice!")
 
-    # 6. Mathematical Operations
+
     def mathematical_operations(self):
         if not self.check_data():
             return
@@ -155,7 +154,7 @@ class SalesDataAnalyzer:
         except ValueError:
             print("Please enter a valid number!")
 
-    # 7. Combine DataFrames
+  
     def combine_data(self, other_dataframe):
         if not self.check_data():
             return
@@ -168,7 +167,7 @@ class SalesDataAnalyzer:
         print("DataFrames combined successfully!")
         print(self.data)
 
-    # 8. Split DataFrame
+
     def split_data(self):
         if not self.check_data():
             return
@@ -183,7 +182,7 @@ class SalesDataAnalyzer:
             print("\nGroup:", value)
             print(group)
 
-    # 9. Search, Sort and Filter
+  
     def search_sort_filter(self):
         if not self.check_data():
             return
@@ -242,7 +241,7 @@ class SalesDataAnalyzer:
         else:
             print("Invalid choice!")
 
-    # 10. Aggregate Functions
+
     def aggregate_functions(self):
         if not self.check_data():
             return
@@ -263,7 +262,7 @@ class SalesDataAnalyzer:
         print("Maximum:", self.data[col].max())
         print("Minimum:", self.data[col].min())
 
-    # 11. Statistical Analysis
+
     def statistical_analysis(self):
         if not self.check_data():
             return
@@ -283,7 +282,7 @@ class SalesDataAnalyzer:
             numeric_only=True
         ))
 
-    # 12. Pivot Table
+    
     def create_pivot_table(self):
         if not self.check_data():
             return
@@ -312,7 +311,7 @@ class SalesDataAnalyzer:
         print("\nPivot Table:")
         print(pivot)
 
-    # 13. NumPy Array Operations
+
     def numpy_operations(self):
         if not self.check_data():
             return
@@ -349,7 +348,7 @@ class SalesDataAnalyzer:
         print("Standard Deviation:", np.std(arr))
         print("Variance:", np.var(arr))
 
-    # 14. Data Visualization
+    
     def visualize_data(self):
         if not self.check_data():
             return
@@ -480,7 +479,7 @@ class SalesDataAnalyzer:
         else:
             print("Invalid choice!")
 
-    # 15. Save Visualization
+   
     def save_visualization(self):
         if not self.check_data():
             return
